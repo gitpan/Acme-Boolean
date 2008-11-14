@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+lib/Acme/Boolean.pm
+t/ad.t
+t/false.t
+t/true.t

@@ -1,0 +1,10 @@
+--- 
+abstract: There is more then one way to be true.
+author: 
+  - Kang-min Liu <gugod@gugod.org>
+generated_by: Dist::Zilla::Plugin::MetaYaml version 1.003
+license: mit
+name: Acme-Boolean
+requires: {}
+
+version: 0.1
