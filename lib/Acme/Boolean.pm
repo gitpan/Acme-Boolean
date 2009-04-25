@@ -1,5 +1,5 @@
 package Acme::Boolean;
-our $VERSION = '0.2';
+our $VERSION = '0.3';
 
 # ABSTRACT: There is more then one way to be true.
 
@@ -45,7 +45,7 @@ Acme::Boolean - There is more then one way to be true.
 
 =head1 VERSION
 
-version 0.2
+version 0.3
 
 =head1 SYNOPSIS
 

@@ -2,9 +2,9 @@
 abstract: There is more then one way to be true.
 author: 
   - Kang-min Liu <gugod@gugod.org>
-generated_by: Dist::Zilla::Plugin::MetaYaml version 1.003
+generated_by: Dist::Zilla::Plugin::MetaYaml version 1.006
 license: mit
 name: Acme-Boolean
 requires: 
   boolean: 0.20
-version: 0.2
+version: 0.3
