@@ -1,8 +1,6 @@
 package Acme::Boolean;
-our $VERSION = '0.3';
-
 # ABSTRACT: There is more then one way to be true.
-
+$Acme::Boolean::VERSION = '0.4';
 use strict;
 use warnings;
 
@@ -15,12 +13,12 @@ no strict 'refs';
 my @true = map {
     *{"$_"} = \&true;
     $_;
-} qw(verifiable trusty accurate actual appropriate authentic authoritative correct dependable direct exact factual fitting genuine honest indubitable kosher lawful legal legitimate natural normal perfect precise proper pure regular right rightful sincere straight trustworthy truthful typical undeniable undesigning undoubted unerring unfaked unfeigned unquestionable veracious veridical veritable wash);
+} qw(yes verifiable trusty accurate actual appropriate authentic authoritative correct dependable direct exact factual fitting genuine honest indubitable kosher lawful legal legitimate natural normal perfect precise proper pure regular right rightful sincere straight trustworthy truthful typical undeniable undesigning undoubted unerring unfaked unfeigned unquestionable veracious veridical veritable wash);
 
 my @false = map {
     *{$_} = \&false;
     $_;
-} qw(untrue wrong incorrect errorneous fallacious untruthful nah apocryphal beguiling bogus casuistic concocted counterfactual deceitful deceiving delusive dishonest distorted erroneous ersatz fake fanciful faulty fictitious fishy fraudulent illusive imaginary improper inaccurate inexact invalid lying mendacious misleading misrepresentative mistaken phony sham sophistical specious spurious unfounded unreal unsound);
+} qw(no untrue wrong incorrect errorneous fallacious untruthful nah apocryphal beguiling bogus casuistic concocted counterfactual deceitful deceiving delusive dishonest distorted erroneous ersatz fake fanciful faulty fictitious fishy fraudulent illusive imaginary improper inaccurate inexact invalid lying mendacious misleading misrepresentative mistaken phony sham sophistical specious spurious unfounded unreal unsound);
 
 my @ad = map {
     *{$_} = sub($) { shift; };
@@ -36,16 +34,19 @@ our %EXPORT_TAGS = (
 
 1;
 
-
-
 __END__
+
+=pod
+
+=encoding UTF-8
+
 =head1 NAME
 
 Acme::Boolean - There is more then one way to be true.
 
 =head1 VERSION
 
-version 0.3
+version 0.4
 
 =head1 SYNOPSIS
 
@@ -110,13 +111,14 @@ L<boolean>, the plain version of this module.
 
 =head1 AUTHOR
 
-  Kang-min Liu <gugod@gugod.org>
+Kang-min Liu <gugod@gugod.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2009 by Kang-min Liu.
+This software is Copyright (c) 2014 by Kang-min Liu.
 
 This is free software, licensed under:
 
   The MIT (X11) License
 
+=cut
